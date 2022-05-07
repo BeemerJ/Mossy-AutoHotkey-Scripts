@@ -7,7 +7,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; Toggle Desktop Audio, requires Virtual Cable.
 ; "VoiceMeeter Output" must be Default Recording Device.
 ; "Microphone" and "Stereo Mix" should be heard by "VoiceMeeter Output".
-; EXTRA: If the script is still not working, Set "VoiceMeeter Output (VB-Audio Virtual Cable)" as input device.
+; EXTRA: If the script is still not working, Set "VoiceMeeter Output (VB-Audio Virtual Cable)" as input device on the required software (e.g. Discord).
 
 !D:: ; Ctrl+D to toggle script.
 
