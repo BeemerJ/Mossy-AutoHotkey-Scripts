@@ -1,4 +1,6 @@
-﻿#SingleInstance Ignore
+; BUGGY, use Message Cleaner plugin for Powercord!
+
+#SingleInstance Ignore
 
 t::
 
