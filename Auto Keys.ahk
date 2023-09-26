@@ -46,3 +46,14 @@ WinMove, %windowName%,, X, Y, begWidth, begHeight
 return
 
 ;-----------------------------------------------
+
+; Search Clipboard
+
+#s::
+{
+ Sleep 10
+ Run, https://www.ecosia.com/search?q=%clipboard%
+ Return
+}
+
+;-----------------------------------------------
