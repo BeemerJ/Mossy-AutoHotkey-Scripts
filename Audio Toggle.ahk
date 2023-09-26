@@ -41,22 +41,26 @@ Loop % (Count)
 ObjRelease(IMMDeviceCollection)
 Return
 
-;Replace your Devices with whatever what you have.
+;--------------------------------------------------
+;--------------------------------------------------
 
 ^Volume_Down::
-    SetDefaultEndpoint( GetDeviceID(Devices, "Headphones (High Definition Audio Device)") )
+    SetDefaultEndpoint( GetDeviceID(Devices, "Headphones") )
     TrayTip Default Audio Device, Default audio device switched to Headphones (High Definition Audio Device).
     return
 
 ^Volume_Up::
-    SetDefaultEndpoint( GetDeviceID(Devices, "Dell S2721HN (NVIDIA High Definition Audio)") )
-    TrayTip Default Audio Device, Default audio device switched to Dell S2721HN (NVIDIA High Definition Audio).
+    SetDefaultEndpoint( GetDeviceID(Devices, "Speakers") )
+    TrayTip Default Audio Device, Default audio device switched to DELL S2721HN (AMD High Definition Audio Device).
     return
 
 ^Volume_Mute::
-    SetDefaultEndpoint( GetDeviceID(Devices, "CABLE Input (VB-Audio Virtual Cable)") )
+    SetDefaultEndpoint( GetDeviceID(Devices, "CABLE Input") )
     TrayTip Default Audio Device, Default audio device switched to CABLE Input (VB-Audio Virtual Cable).
     return
+
+;--------------------------------------------------
+;--------------------------------------------------
 
 SetDefaultEndpoint(DeviceID)
 {
