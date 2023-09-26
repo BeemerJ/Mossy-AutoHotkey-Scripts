@@ -48,12 +48,30 @@ return
 ;-----------------------------------------------
 
 ; Search Clipboard
+UserBrowser := "librewolf" ; Define your Browser
 
 #s::
+
+Sleep 10
+Run, https://www.ecosia.com/search?q=%clipboard% ; Replace with your preffered Search Engine
+SetTitleMatchMode 2
+Sleep 50
+if WinExist(%UserBrowser%)
 {
- Sleep 10
- Run, https://www.ecosia.com/search?q=%clipboard%
- Return
+	WinActivate
 }
+Return
+
+#u::
+
+Sleep 10
+Run, https://www.urbandictionary.com/define.php?term=%clipboard% ; Search with Urban Dictionary
+SetTitleMatchMode 2
+Sleep 50
+if WinExist(%UserBrowser%)
+{
+	WinActivate
+}
+Return
 
 ;-----------------------------------------------
